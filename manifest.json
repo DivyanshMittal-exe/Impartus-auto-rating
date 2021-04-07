@@ -1,24 +1,21 @@
 {
-	"manifest_version": 2,
-	"name": "Impartus Video Rating",
-	"version": "1.0",
-	"description": "Automatically gives 1 star review to any video you watch on impartus and also help gain karma",
-	"content_scripts": [ {
-		"matches": [
-			"https://a.impartus.com/ilc/*"
-		],
-		"js": ["rate.js"],
-		"run_at": "document_idle"
-	} ],
-	"icons": {
-		"36": "icons/icon36.png",
-		"48": "icons/icon48.png",
-		"96": "icons/icon96.png",
-		"192": "icons/icon192.png",
-		"512": "icons/icon512.png"
-	},
-	  "permissions":[
-		"https://a.impartus.com/*", "tabs"
-	  ]
-	
+  "manifest_version": 2,
+  "name": "Impartus Video Rating",
+  "version": "1.1",
+  "description": "Automatically gives 3 star review to any video you watch on impartus and also help gain karma",
+  "content_scripts": [
+    {
+      "matches": ["https://a.impartus.com/ilc/*"],
+      "js": ["rate.js"],
+      "run_at": "document_idle"
+    }
+  ],
+  "icons": {
+    "36": "icons/icon36.png",
+    "48": "icons/icon48.png",
+    "96": "icons/icon96.png",
+    "192": "icons/icon192.png",
+    "512": "icons/icon512.png"
+  },
+  "permissions": ["https://a.impartus.com/*", "tabs"]
 }
