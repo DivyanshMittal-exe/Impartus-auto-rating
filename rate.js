@@ -10,7 +10,7 @@ window.onhashchange = function () {
 
     setTimeout(function () {
       var x = document.getElementsByClassName("bot-star float-left");
-      x[2].click();
+      x[0].click();
       var y = document.getElementsByClassName("like-dislike-item");
       var z1 = y[0].getElementsByClassName(
         "material-icons thumb_down float-right"
