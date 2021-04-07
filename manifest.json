@@ -5,7 +5,7 @@
 	"description": "Automatically gives 1 star review to any video you watch on impartus and also help gain karma",
 	"content_scripts": [ {
 		"matches": [
-			"<all_urls>"
+			"https://a.impartus.com/ilc/*"
 		],
 		"js": ["rate.js"],
 		"run_at": "document_idle"
