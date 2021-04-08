@@ -1,14 +1,18 @@
 console.log("Working");
+var lastURL = document.URL;
+var newURL = document.URL;
+
 
 window.onhashchange = function () {
-  console.log("#changed");
+    lastURL=newURL;
+    newURL=document.URL;
 
-  window.onhashchange = function () {
- 
+    checker = lastURL.split("/");
+    console.log(checker[5]);
+
+    if(checker[5]=='video'){
     console.log("Running");
-    window.addEventListener("DOMContentLoaded", (event) => {
-      console.log("DOM fully loaded and parsed");
-    });
+    
 
     setTimeout(function () {
       var x = document.getElementsByClassName("bot-star float-left");
@@ -28,5 +32,5 @@ window.onhashchange = function () {
       z3[0].click();
       document.getElementById("vidRatingCancel").click();
     },300);
+  }
   };
-};
