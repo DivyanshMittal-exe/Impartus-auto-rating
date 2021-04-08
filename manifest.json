@@ -8,6 +8,16 @@
       "matches": ["https://a.impartus.com/ilc/*"],
       "js": ["rate.js"],
       "run_at": "document_idle"
+    },
+    {
+      "matches": ["https://a.impartus.com/ilc/#/discussionThread*"],
+      "js": ["upvoter.js"],
+      "run_at": "document_idle"
+    },
+    {
+      "matches": ["https://a.impartus.com/ilc/#/home"],
+      "js": ["upvote_home.js"],
+      "run_at": "document_idle"
     }
   ],
   "icons": {

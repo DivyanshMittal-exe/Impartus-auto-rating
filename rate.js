@@ -1,8 +1,10 @@
 console.log("Working");
 
 window.onhashchange = function () {
-  console.log("#changed", window.location.hash);
+  console.log("#changed");
+
   window.onhashchange = function () {
+ 
     console.log("Running");
     window.addEventListener("DOMContentLoaded", (event) => {
       console.log("DOM fully loaded and parsed");
@@ -25,6 +27,6 @@ window.onhashchange = function () {
       );
       z3[0].click();
       document.getElementById("vidRatingCancel").click();
-    }, 300);
+    },300);
   };
 };
