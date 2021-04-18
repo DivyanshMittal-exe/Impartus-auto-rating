@@ -1,5 +1,4 @@
-# Moodle Sidebar Plugin
-
+# Impartus Auto Rating and Karma Booster
 Automatially gives a 3 star rating to any impartus video you watch.(You can also modify the code easily if you want to give a 5 [or 1 :) ] star rating)
 
 ![example](ss/ss.png)
